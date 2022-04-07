@@ -1,0 +1,50 @@
+/* Home */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* nav*/
+.navbar{
+    background: #3F51B5;
+}
+.navbar ul li a,
+.navbar-brand{
+    color: #eee;
+    text-transform: uppercase;
+}
+.navbar ul li a.nav-link:focus,
+.navbar ul li a.nav-link:active{
+    color: #eee;
+}
+.navbar ul li a:hover,
+.navbar-brand:hover{
+    color: #EFF3FB;
+}
+
+/* Page Login */
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+button.btn-lg{
+    background: #3F51B5;
+    color: #eee;
+}
+footer{
+    background: #3F51B5;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
