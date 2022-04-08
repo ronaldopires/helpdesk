@@ -70,7 +70,7 @@
   <footer>
     <!-- Copyright -->
     <div class="text-center text-light p-5 mb-0 footer">
-      Copyright © 2022. All rights reserved.
+    Ronaldo Carvalho © 2022. All rights reserved.
     </div>
     <!-- Copyright -->
   </footer>

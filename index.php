@@ -1,7 +1,18 @@
 <?php include("header.php"); ?>
 
 <main>
-  <div class="container mt-5">
+  <div class="container p-3">
+    <div class="row">
+      <h3 class="mb-4">Relatórios</h3>
+      <div class="col-md-4 bg-light">
+        <canvas id="myChart"></canvas>
+      </div>
+      <div class="col-md-8 bg-light">
+        <canvas id="year"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 bg-light p-3 rounded-3">
     <div class="row">
       <div class="col-12">
         <h1 class="p-3 text-center h3">Abertura de Chamados</h1>
