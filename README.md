@@ -1,8 +1,6 @@
 ## Sistema de chamados help desk
 
-- [Website](https://devronaldo.com.br/)
-
-## Descrição do Projeto
+### Descrição do Projeto
 <p align="center">O objetivo desse projeto é criar um sistema web para criação e gerenciamento de chamados para o setor de suporte técnico, com o intuito de facilitar no controle e gerar relatórios.</p>
 
 ### 🛠 Tecnologias
