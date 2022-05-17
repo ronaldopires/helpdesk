@@ -2,7 +2,7 @@
   "name": "helpdesk",
   "version": "1.0.0",
   "description": "<p align=\"center\">O objetivo desse projeto é criar um sistema web para criação e gerenciamento de chamados para o setor de suporte técnico, com o intuito de facilitar no controle e gerar relatórios.</p>",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/ronaldopires/helpdesk#readme",
   "dependencies": {
-    "express": "^4.17.3"
-  },
-  "devDependencies": {}
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.17.3",
+    "http-errors": "^2.0.0"
+  }
 }

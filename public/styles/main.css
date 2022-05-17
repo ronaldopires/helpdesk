@@ -115,7 +115,7 @@ nav a {
 
 /* Requests */
 .content-main {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 1.5rem;
 }
 .content-request {
@@ -125,7 +125,7 @@ nav a {
   border: 1px solid #f0f2f5;
   background-color: #fff;
 }
-.content-table{
+.content-table {
   overflow: auto;
 }
 
@@ -136,7 +136,6 @@ nav a {
 .content-report {
   background-color: var(--bs-gray-100);
 }
-
 
 /* Page Login */
 
