@@ -2,6 +2,7 @@ const express = require('express')
 const port = 3000
 const path = require('path')
 const createError = require('http-errors')
+const mongoose = require('mongoose')
 
 const indexRoute = require('./routes/index')
 const newRequestRoute = require('./routes/new-request')
@@ -14,6 +15,24 @@ const registerRoute = require('./routes/register')
 const bodyParser = require('body-parser')
 
 const app = express()
+const DB_USER = 'devronaldo'
+const DB_PASSWORD = encodeURIComponent('SD@SI!dev#2020')
+
+mongoose
+  .connect(
+    `mongodb+srv://${DB_USER}:${DB_PASSWORD}@apicluster.dkn70.mongodb.net/helpDeskDatabase?retryWrites=true&w=majority`,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    }
+  )
+  .then(() => {
+    console.log('Conctado no MongoDB')
+    app.listen(port, err => {
+      console.log(`Server is listering on ${port}`)
+    })
+  })
+  .catch(err => console.log(err))
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -42,7 +61,4 @@ app.use((err, req, res, next) => {
   res.locals.error = req.app.get('env') === 'development' ? err : {}
   res.status(err.status || 500)
   res.render('error')
-})
-app.listen(port, err => {
-  console.log(`Server is listering on ${port}`)
 })

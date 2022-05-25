@@ -4,7 +4,8 @@
   "description": "<p align=\"center\">O objetivo desse projeto é criar um sistema web para criação e gerenciamento de chamados para o setor de suporte técnico, com o intuito de facilitar no controle e gerar relatórios.</p>",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js localhost:3000"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "body-parser": "^1.20.0",
     "ejs": "^3.1.8",
     "express": "^4.17.3",
-    "http-errors": "^2.0.0"
+    "http-errors": "^2.0.0",
+    "mongoose": "^6.3.3"
   }
 }
